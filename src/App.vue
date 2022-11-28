@@ -1,13 +1,23 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
+    <MyComponent msg="This is my component!" />
+    <FirstComponent msg="This is my First Component"/>
+    <SecondComponent msg="This is an array?"/>
   </div>
 </template>
 
 <script>
+import MyComponent from './components/MyComponent.vue';
+import FirstComponent from './components/FirstComponent.vue';
+import SecondComponent from './components/SecondComponent.vue';
 export default {
   name: 'App',
-  components: {}
+  components: {
+    MyComponent,
+    FirstComponent,
+    SecondComponent
+  }
 }
 </script>
 
@@ -21,3 +31,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+
